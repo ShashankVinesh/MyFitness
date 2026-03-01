@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myfitness.AppFragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="com.example.myfitness.AppFragments.ExerciseListFragment"
+        android:label="fragment_exercise_list"
+        tools:layout="@layout/fragment_exercise_list" >
+
+        <action
+            android:id="@+id/action_exerciseListFragment_to_exerciseDetail"
+            app:destination="@id/exerciseDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseDetail"
+        android:name="com.example.myfitness.AppFragments.ExerciseDetailFragment"
+        android:label="fragment_exercise_detail"
+        tools:layout="@layout/fragment_exercise_detail" >
+        <action
+            android:id="@+id/action_exerciseDetail_to_exerciseListFragment"
+            app:destination="@id/exerciseListFragment" />
+    </fragment>
+</navigation>
