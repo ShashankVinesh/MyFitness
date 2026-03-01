@@ -12,7 +12,7 @@
 - SharedPefrences 
 
 ## 📸 Screenshots
-![image alt] (https://github.com/ShashankVinesh/MyFitness/blob/main/Picsart_26-03-01_12-55-27-590.jpg)
+![image alt] (https://github.com/ShashankVinesh/MyFitness/blob/main/Picsart_26-03-01_12-55-27-590.jpg?raw=true)
 
 
 ## 🚀 Setup
